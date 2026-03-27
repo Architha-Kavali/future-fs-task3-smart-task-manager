@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Dashboard</title>
+
+<link rel="stylesheet" href="style2.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Task Dashboard</h1>
+
+<button class="theme" onclick="toggleTheme()">Toggle Dark Mode</button>
+
+<div class="stats">
+<p>Total Tasks: <span id="total"></span></p>
+<p>Completed: <span id="completed"></span></p>
+</div>
+
+<input type="text" id="taskInput" placeholder="Enter new task">
+
+<button onclick="addTask()">
+<i class="fa-solid fa-plus"></i> Add Task
+</button>
+
+<ul id="taskList"></ul>
+
+<button class="logout" onclick="logout()">
+<i class="fa-solid fa-right-from-bracket"></i> Logout
+</button>
+
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
